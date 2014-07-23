@@ -37,3 +37,7 @@ d, Load Table information into HDFS incremental
 sqoop import --connect jdbc:oracle:thin:@localhost:1521/orcl --username MOVIEDEMO --password welcome1 --table CREW --incremental append --check-column CREW_ID
 
 Scenario 2
+
+hive -f  hive/create_external_crew_table.hql
+
+
